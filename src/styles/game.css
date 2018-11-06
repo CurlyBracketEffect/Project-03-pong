@@ -89,3 +89,10 @@ h1 {
   display: flex;
   justify-content: space-around;
 }
+#paused{
+  font-size: 4rem;
+  
+  display: flex;
+  justify-content: center;
+  display: none;
+}

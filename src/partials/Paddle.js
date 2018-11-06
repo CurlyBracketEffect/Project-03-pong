@@ -44,4 +44,14 @@ export default class Paddle {
         let bottomY = this.posY + this.height;
         return [leftX, rightX, topY, bottomY];
       }
+
+    reset(){
+        this.posY = this.board.height / 2 - this.height / 2;
+        if (this.isLeft) {
+            this.posX = 0;
+        } else {
+            this.posX = this.board.width - this.width;
+        }
+
+    }
 }
